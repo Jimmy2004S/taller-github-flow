@@ -25,3 +25,7 @@ jobs:
         run: |
           # Flake8 evalúa el código y falla si encuentra funciones con V(G) > 5
           flake8 . --max-complexity=5 --statistics
+
+      - name: Ejecutar pruebas unitarias
+        run: |
+          python -m unittest -v
